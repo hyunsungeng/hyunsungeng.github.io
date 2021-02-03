@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PORTFOLIO</title>
+    <script>
+    var imgPs=["imgP1","imgP2","imgP3","imgP4"];
+    </script>
+    <style>
+      h1 {
+        font-family:"segoe ui", "helvetica neue", sans-serif;
+        font-size: 50px;
+        color:grey;
+        font-weight:lighter;
+        margin:16px;
+      }
+      .head{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      ul li{
+        display: inline;
+        font-family:"segoe ui";
+        color:grey;
+        font-weight:lighter;
+
+      }
+      ul {
+        padding-top:35px;
+      }
+      img {
+        height: 100%;
+      }
+      .imgcontainer {
+        justify-content:center;
+        align-items:center;
+        width: 200px;
+        height: 200px;
+        margin:3px;
+        overflow:hidden;
+        position:relative;
+        display:inline-block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="head">
+
+    <h1>Portfolio</h1>
+    <div class="menu">
+      <ul>
+        <li><a href="books.html">books</a></li>
+        <li><a href="packages.html">packages</a></li>
+        <li><a href="products.html">products</a></li>
+        <li><a href="letterings.html">letterings</a></li>
+        <li><a href="pops.html">pops</a></li>
+      </ul>
+    </div>
+
+  </div>
+    <script>
+    i=0;
+    while(i<imgPs.length){
+    document.write('<div class="imgcontainer"><img src="'+imgPs[i]+'.jpg"></div>');
+    i = i + 1;
+    }
+    </script>
+  </body>
+</html>

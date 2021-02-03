@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>NINJIN</h1>
+    <script>
+      document.write('<li>1</li>');
+      /*반복문*/
+      var i=0;
+
+      while(i<3){
+      document.write('<li>2</li>');
+      document.write('<li>3</li>');
+      i = i + 1;
+      }
+      document.write('<li>4</li>');
+
+      var cats = ['yang','dang','bum'];
+    </script>
+    <ul>
+      <script>
+      var i=0;
+      while(i<cats.length){
+        document.write('<li>'+cats[i]+'</li>');
+        i = i + 1;
+      }
+      var alist= document.querySelectorAll('a');
+      var i=0;
+      while(i < alist.length){
+        alist[i].style.color='powderblue';
+      i = i + 1;
+      }
+      </script>
+    </ul>
+  </body>
+</html>

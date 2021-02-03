@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    document.write(1+1);
+    </script>
+    <input type="button" value="hi" onclick="alert('hi')">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('key down')">
+    <p>
+    <input type="button" value="black" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="white" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <input id="bw" type="button" value="black" onclick="
+    if(document.querySelector('#bw').value === 'black'){
+       document.querySelector('body').style.backgroundColor = 'black';
+       document.querySelector('body').style.color = 'white';
+       document.querySelector('#bw').value = 'white';
+    }
+    else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#bw').value = 'black';
+    }
+    ">
+    <input type="button" value="black" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'black'){
+       target.style.backgroundColor = 'black';
+       target.style.color = 'white';
+       this.value = 'white';
+    }
+    else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'black';
+    }
+    ">
+    <span>양갱</span>
+  </body>
+</html>
